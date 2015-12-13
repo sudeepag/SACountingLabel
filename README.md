@@ -34,8 +34,7 @@ To manually install SACountingLabel, simply add `SACountingLabel.swift` to your 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-
-## Setup
+## Usage
 
 Creating a SACountingLabel is the same as creating a UILabel:
 
@@ -45,12 +44,10 @@ let label = SACountingLabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
 
 Or add it to your storyboard or XIB file and set the class type to `SACountingLabel` instead of `UILabel`.
 
-## Usage
-
 This is the general syntax for counting from a start value to an end value for a specified counting and animation style.
 
 ```swift
-label.countFrom(0, to: 100, withDuration: 1.0, andAnimationType: type, andCountingType: .Int)
+label.countFrom(0, to: 100, withDuration: 1.0, andAnimationType: .EaseIn, andCountingType: .Int)
 ```
 
 #### Start Value
