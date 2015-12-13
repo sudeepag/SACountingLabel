@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		02130DCF6B2837AA94E5C939260F58B4 /* SACountingLabel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D78D31418C1133A1BAE093D4CE740 /* SACountingLabel.bundle */; };
 		0E15197A7F6FE5F93B0CEAF587E98784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		1F4312681D4573EC01B3C589134A1D46 /* SACountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203A81A6B2F3B1D44D62CD5A4401401 /* SACountingLabel.swift */; };
 		2E498ECCC555F3B091BBE26F8CAD111B /* Pods-SACountingLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 016882B774E5E138AF51D2CBA9699B53 /* Pods-SACountingLabel_Example-dummy.m */; };
 		31F8CD08FB828769DB1F730E2977EEAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		55F85B88BBA3603C491688F2E77B5399 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92817D550733F81E667D2D0CA36A1210 /* ReplaceMe.swift */; };
+		45A058A9D9127016AE0D11ACBB485B90 /* SACountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094D04F6C26B71EF029F8A3A468C4F2F /* SACountingLabel-dummy.m */; };
 		5C0403B94669E7F1078D859580265E3A /* Pods-SACountingLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A3875E83BD0647FF9AD7983D66B794 /* Pods-SACountingLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA136D4898CD48AE8DDA8E50E9ED8805 /* Pods-SACountingLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C774719D8F4B8520F0E197AD1F5621A2 /* Pods-SACountingLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA48755943CDAD98AAFFA3CFC72E889F /* SACountingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B923CB71D885581D1EECAAF89306F418 /* SACountingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E63EB884C2DF35F9F70A4F0FA7901C87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		EACD8C5A0095C369F733DB8A658E0A25 /* Pods-SACountingLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 532733F66714C45EB474E6A8C909045E /* Pods-SACountingLabel_Tests-dummy.m */; };
-		F401F04572BA0A55D1524F21526B5A14 /* SACountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094D04F6C26B71EF029F8A3A468C4F2F /* SACountingLabel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		776BA2B971FD34AAF0419817D3A7491A /* Pods-SACountingLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SACountingLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		895B767C1BF29D5D31A9A6430F256773 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BC44959A0869A9EEDBA1876932CD3F0 /* Pods-SACountingLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SACountingLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		92817D550733F81E667D2D0CA36A1210 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		9E955F6EBB5AF2D27D6F1BF6A2CD9D20 /* Pods-SACountingLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SACountingLabel_Example.modulemap"; sourceTree = "<group>"; };
 		B553BA5B00D198D93A9E0E6B72502DE1 /* SACountingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SACountingLabel.modulemap; sourceTree = "<group>"; };
 		B923CB71D885581D1EECAAF89306F418 /* SACountingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SACountingLabel-umbrella.h"; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		BE50355CFF4EB4DE13D36AF10FB6530C /* SACountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SACountingLabel.xcconfig; sourceTree = "<group>"; };
 		C774719D8F4B8520F0E197AD1F5621A2 /* Pods-SACountingLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SACountingLabel_Example-umbrella.h"; sourceTree = "<group>"; };
 		C9D87784D775B7A48BE3E477D3DFC60E /* Pods-SACountingLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SACountingLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D203A81A6B2F3B1D44D62CD5A4401401 /* SACountingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SACountingLabel.swift; sourceTree = "<group>"; };
 		D4B151AE313198B8E3DC3BA99B28039D /* Pods-SACountingLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SACountingLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E04E38A12985B0C967C9B640D1BE46F4 /* Pods-SACountingLabel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SACountingLabel_Tests-resources.sh"; sourceTree = "<group>"; };
 		E2205EEE4B241911DEFBF25E4434ED53 /* Pods-SACountingLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SACountingLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		3263525CA28A926254847B5F0B3F92A0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				5481C0FFCB7A5D3F70C19CA31B27A277 /* Classes */,
+				737017FD7326278359FBBA0961D5B6C3 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -151,10 +151,10 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		5481C0FFCB7A5D3F70C19CA31B27A277 /* Classes */ = {
+		737017FD7326278359FBBA0961D5B6C3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				92817D550733F81E667D2D0CA36A1210 /* ReplaceMe.swift */,
+				D203A81A6B2F3B1D44D62CD5A4401401 /* SACountingLabel.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E627012ADE8242AE8ACD82BC728F69B /* Build configuration list for PBXNativeTarget "SACountingLabel" */;
 			buildPhases = (
-				0BA8E772A14521EA3C6DACB8C74F89E9 /* Sources */,
+				CCEA55D245DFFF4CB681724994CBA8AA /* Sources */,
 				7CBF1CA93D499C706D93FED06DBD9352 /* Frameworks */,
 				4A094A70D5F2BE5DBA51962597008E05 /* Resources */,
 				2BE1EDB525331FC264B3FC4AC85BA895 /* Headers */,
@@ -396,19 +396,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0BA8E772A14521EA3C6DACB8C74F89E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				55F85B88BBA3603C491688F2E77B5399 /* ReplaceMe.swift in Sources */,
-				F401F04572BA0A55D1524F21526B5A14 /* SACountingLabel-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		741D1EAC12D0D7AC6F36692D77071BE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA55D245DFFF4CB681724994CBA8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A058A9D9127016AE0D11ACBB485B90 /* SACountingLabel-dummy.m in Sources */,
+				1F4312681D4573EC01B3C589134A1D46 /* SACountingLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
