@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "SACountingLabel"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SACountingLabel."
+  s.summary          = "A custom animated counting UILabel, written in Swift."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,10 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        A custom animated counting UILabel, written in Swift.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SACountingLabel"
+  s.homepage         = "https://github.com/sudeepag/SACountingLabel"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Sudeep Agarwal" => "sudeep135@gmail.com" }

@@ -1,0 +1,6 @@
+framework module SACountingLabel {
+  umbrella header "SACountingLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

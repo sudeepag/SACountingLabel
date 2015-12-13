@@ -1,0 +1,6 @@
+framework module Pods_SACountingLabel_Tests {
+  umbrella header "Pods-SACountingLabel_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
