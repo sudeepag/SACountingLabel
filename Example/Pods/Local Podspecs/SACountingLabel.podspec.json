@@ -1,6 +1,6 @@
 {
   "name": "SACountingLabel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "An animated counting UILabel, written in Swift.",
   "description": "A custom animated counting UILabel, written in Swift.",
   "homepage": "https://github.com/sudeepag/SACountingLabel",
@@ -9,8 +9,8 @@
     "Sudeep Agarwal": "sudeep135@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SACountingLabel.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/sudeepag/SACountingLabel.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
