@@ -66,7 +66,7 @@ public class SACountingLabel: UILabel {
         }
         
         // Create timer
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "updateValue", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector:  #selector(updateValue), userInfo: nil, repeats: true)
     }
     
     func updateText(value: Float) {
