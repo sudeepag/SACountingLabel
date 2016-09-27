@@ -1,6 +1,5 @@
 //
-//  SACountingLabel.swift
-//  Pods
+//  CountingLabel.swift
 //
 //  Created by Sudeep Agarwal on 12/13/15.
 //	Updated to Swift 3 by Omar Albeik
@@ -9,9 +8,9 @@
 import Foundation
 import UIKit
 
-public class SACountingLabel: UILabel {
+public class CountingLabel: UILabel {
 	
-	let kCounterRate: Float = 3.0
+	let counterRate: Float = 3.0
 	
 	public enum AnimationType {
 		case linear
@@ -66,7 +65,7 @@ public class SACountingLabel: UILabel {
 		}
 		
 		// Create timer
-		timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(SACountingLabel.updateValue), userInfo: nil, repeats: true)
+		timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.updateValue), userInfo: nil, repeats: true)
 	}
 	
 	func updateText(value: Float) {
@@ -111,21 +110,21 @@ public class SACountingLabel: UILabel {
 		case .linear:
 			return t
 		case .easeIn:
-			return powf(t, kCounterRate)
+			return powf(t, counterRate)
 		case .easeOut:
-			return 1.0 - powf((1.0 - t), kCounterRate)
+			return 1.0 - powf((1.0 - t), counterRate)
 		case .easeInOut:
 			var t = t
 			var sign = 1.0;
-			let r = Int(kCounterRate)
+			let r = Int(counterRate)
 			if (r % 2 == 0) {
 				sign = -1.0
 			}
 			t *= 2;
 			if (t < 1) {
-				return 0.5 * powf(t, kCounterRate)
+				return 0.5 * powf(t, counterRate)
 			} else {
-				return Float(sign * 0.5) * (powf(t-2, kCounterRate) + Float(sign * 2))
+				return Float(sign * 0.5) * (powf(t-2, counterRate) + Float(sign * 2))
 			}
 			
 		}
