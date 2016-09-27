@@ -1,12 +1,12 @@
-# SACountingLabel
+# CountingLabel
 
 ![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
 ![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
-[![Version](https://img.shields.io/cocoapods/v/SACountingLabel.svg?style=flat)](http://cocoapods.org/pods/SACountingLabel)
-[![License](https://img.shields.io/cocoapods/l/SACountingLabel.svg?style=flat)](http://cocoapods.org/pods/SACountingLabel)
-[![Platform](https://img.shields.io/cocoapods/p/SACountingLabel.svg?style=flat)](http://cocoapods.org/pods/SACountingLabel)
+[![Version](https://img.shields.io/cocoapods/v/CountingLabel.svg?style=flat)](http://cocoapods.org/pods/CountingLabel)
+[![License](https://img.shields.io/cocoapods/l/CountingLabel.svg?style=flat)](http://cocoapods.org/pods/CountingLabel)
+[![Platform](https://img.shields.io/cocoapods/p/CountingLabel.svg?style=flat)](http://cocoapods.org/pods/CountingLabel)
 
-SACountingLabel is a highly customizable animated UILabel that can count, inspired by Tim Gostony's [UICountingLabel](https://github.com/dataxpress/UICountingLabel). Originally created as an animated UI component for a game to display scores, SACountingLabel supports the use of various formats such as percentages, currencies and multiple decimal places. It can also be modified to use different animation modes such as linear, ease in, ease out as well as ease in and out. 
+CountingLabel is a highly customizable animated UILabel that can count, inspired by Tim Gostony's [UICountingLabel](https://github.com/dataxpress/UICountingLabel). Originally created as an animated UI component for a game to display scores, CountingLabel supports the use of various formats such as percentages, currencies and multiple decimal places. It can also be modified to use different animation modes such as linear, ease in, ease out as well as ease in and out. 
 
 <img src="https://cloud.githubusercontent.com/assets/11940172/11767479/9730af98-a1e9-11e5-9a0e-0de09d872051.gif" alt="int" width="320" height="70.5">
 
@@ -16,11 +16,11 @@ SACountingLabel is a highly customizable animated UILabel that can count, inspir
 
 ## Installation
 
-SACountingLabel is available through [CocoaPods](http://cocoapods.org). To install
+CountingLabel is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```swift
-pod "SACountingLabel"
+pod "CountingLabel"
 ```
 
 And then run:
@@ -28,7 +28,7 @@ And then run:
 `$ pod install`
 
 #### Manual Installation
-To manually install SACountingLabel, simply add `SACountingLabel.swift` to your project.
+To manually install CountingLabel, simply add `CountingLabel.swift` to your project.
 
 ## Example
 
@@ -36,13 +36,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Usage
 
-Creating a SACountingLabel is the same as creating a UILabel:
+Creating a CountingLabel is the same as creating a UILabel:
 
 ```swift
-let label = SACountingLabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+let label = CountingLabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
 ```
 
-Or add it to your storyboard or XIB file and set the class type to `SACountingLabel` instead of `UILabel`.
+Or add it to your storyboard or XIB file and set the class type to `CountingLabel` instead of `UILabel`.
 
 This is the general syntax for counting from a start value to an end value for a specified counting and animation style.
 
