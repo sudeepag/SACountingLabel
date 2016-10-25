@@ -67,6 +67,7 @@ open class SACountingLabel: UILabel {
         
         // Create timer
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(SACountingLabel.updateValue), userInfo: nil, repeats: true)
+        RunLoop.current.add(timer!, forMode: .commonModes)
     }
     
     func updateText(_ value: Float) {
