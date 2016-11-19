@@ -7,6 +7,4 @@ end
 
 target 'SACountingLabel_Tests', :exclusive => true do
   pod "SACountingLabel", :path => "../"
-
-  
 end
