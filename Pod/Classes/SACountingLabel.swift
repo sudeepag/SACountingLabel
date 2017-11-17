@@ -85,7 +85,7 @@ open class SACountingLabel: UILabel {
         }
     }
     
-    func updateValue() {
+    @objc func updateValue() {
         
         // Update the progress
         let now = Date.timeIntervalSinceReferenceDate
