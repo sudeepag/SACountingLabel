@@ -14,24 +14,24 @@ public class SACountingLabel: UILabel {
     let kCounterRate: Float = 3.0
     
     public enum AnimationType {
-        case Linear
-        case EaseIn
-        case EaseOut
-        case EaseInOut
+        case linear
+        case easeIn
+        case easeOut
+        case easeInOut
     }
     
     public enum CountingType {
-        case Int
-        case Float
-        case Custom
+        case int
+        case float
+        case custom
     }
     
     var start: Float = 0.0
     var end: Float = 0.0
-    var timer: NSTimer?
-    var progress: NSTimeInterval!
-    var lastUpdate: NSTimeInterval!
-    var duration: NSTimeInterval!
+    var timer: Timer?
+    var progress: TimeInterval!
+    var lastUpdate: TimeInterval!
+    var duration: TimeInterval!
     var countingType: CountingType!
     var animationType: AnimationType!
     public var format: String?
@@ -41,11 +41,11 @@ public class SACountingLabel: UILabel {
             return end
         }
         let percent = Float(progress / duration)
-        let update = updateCounter(percent)
+        let update = updateCounter(t: percent)
         return start + (update * (end - start));
     }
     
-    public func countFrom(fromValue: Float, to toValue: Float, withDuration duration: NSTimeInterval, andAnimationType aType: AnimationType, andCountingType cType: CountingType) {
+    public func countFrom(fromValue: Float, to toValue: Float, withDuration duration: TimeInterval, andAnimationType aType: AnimationType, andCountingType cType: CountingType) {
         
         // Set values
         self.start = fromValue
@@ -54,28 +54,28 @@ public class SACountingLabel: UILabel {
         self.countingType = cType
         self.animationType = aType
         self.progress = 0.0
-        self.lastUpdate = NSDate.timeIntervalSinceReferenceDate()
+        self.lastUpdate = NSDate.timeIntervalSinceReferenceDate
         
         // Invalidate and nullify timer
         killTimer()
         
         // Handle no animation
         if (duration == 0.0) {
-            updateText(toValue)
+            updateText(value: toValue)
             return
         }
         
         // Create timer
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "updateValue", userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: "updateValue", userInfo: nil, repeats: true)
     }
     
     func updateText(value: Float) {
         switch countingType! {
-        case .Int:
+        case .int:
             self.text = "\(Int(value))"
-        case .Float:
+        case .float:
             self.text = String(format: "%.2f", value)
-        case .Custom:
+        case .custom:
             if let format = format {
                 self.text = String(format: format, value)
             } else {
@@ -87,7 +87,7 @@ public class SACountingLabel: UILabel {
     func updateValue() {
         
         // Update the progress
-        let now = NSDate.timeIntervalSinceReferenceDate()
+        let now = NSDate.timeIntervalSinceReferenceDate
         progress = progress + (now - lastUpdate)
         lastUpdate = now
         
@@ -97,7 +97,7 @@ public class SACountingLabel: UILabel {
             progress = duration
         }
         
-        updateText(currentValue)
+        updateText(value: currentValue)
         
     }
     
@@ -108,13 +108,13 @@ public class SACountingLabel: UILabel {
     
     func updateCounter(t: Float) -> Float {
         switch animationType! {
-        case .Linear:
+        case .linear:
             return t
-        case .EaseIn:
+        case .easeIn:
             return powf(t, kCounterRate)
-        case .EaseOut:
+        case .easeOut:
             return 1.0 - powf((1.0 - t), kCounterRate)
-        case .EaseInOut:
+        case .easeInOut:
             var t = t
             var sign = 1.0;
             let r = Int(kCounterRate)
